@@ -1,0 +1,15 @@
+
+body { margin:0px; padding:0px;	background: #C7F9CC; }
+
+@font-face { font-family: "Poppins-Regular"; src: url("Fonts/Poppins-Regular.ttf");}
+@font-face { font-family: "Poppins-Medium"; src: url("Fonts/Poppins-Medium.ttf");}
+@font-face { font-family: "Poppins-Bold"; src: url("Fonts/Poppins-bold.ttf");}
+
+h1, h2, h3, h4 {margin: 0; padding: 0 0 10px 0; font-family: "Poppins-Medium"; color: white; }
+input, textarea { font-family: "Poppins-Regular"; }
+p {margin: 0; padding: 0 0 10px 0; font-family: "Poppins-Regular";}
+.clear {clear: both;}
+
+
+
+
