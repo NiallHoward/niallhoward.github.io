@@ -1,5 +1,5 @@
 
-body { margin:0px; padding:0px; background: rgb(0,87,77); }
+body { margin:0px; padding:0px; background: #fff }
 
 @font-face { font-family: "Poppins-Regular"; src: url("Fonts/Poppins-Regular.ttf");}
 @font-face { font-family: "Poppins-Medium"; src: url("Fonts/Poppins-Medium.ttf");}
@@ -11,5 +11,4 @@ p {margin: 0; padding: 0 0 10px 0; font-family: "Poppins-Regular";}
 .clear {clear: both;}
 
 
-
-
+.logo { background: url(images/logo.png) no-repeat center center; background-size: 100%;  width: 303px; height: 116px; position: absolute; top:40%; left: 50%; transform: translate(-50%,-40%);}
