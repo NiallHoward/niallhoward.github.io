@@ -1,5 +1,6 @@
 
-body { margin:0px; padding:0px; background: #fff }
+html { margin:0px; padding:0px; height: 101%;}
+body { margin:0px; padding:0px; height: 100%; overflow: hidden; background: #333;}
 
 @font-face { font-family: "Poppins-Regular"; src: url("Fonts/Poppins-Regular.ttf");}
 @font-face { font-family: "Poppins-Medium"; src: url("Fonts/Poppins-Medium.ttf");}
@@ -10,7 +11,7 @@ input, textarea { font-family: "Poppins-Regular"; }
 p {margin: 0; padding: 0 0 10px 0; font-family: "Poppins-Regular";}
 .clear {clear: both;}
 
-.logo { background: url(Images/logo.png) no-repeat center center; background-size: 100%; width: 303px; height: 116px; position: absolute; top: 40%; left: 50%; transform: translate(-50%,-40%); }
+.logo { background: url(Images/logo-white.png) no-repeat center center; background-size: 100%; width: 303px; height: 116px; position: absolute; top: 40%; left: 50%; transform: translate(-50%,-40%); }
 
 @media only screen and (max-width: 600px) {
 	.logo {width: 200px; height: 77px;}
