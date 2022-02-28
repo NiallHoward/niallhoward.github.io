@@ -19,6 +19,13 @@ div:after {clear: both; content: ""; display: block; height: 0; visibility: hidd
 .content-wrap .content h4 { font-size: 200%; padding: 0; }
 .content-wrap .content h1 { font-size: 550%; letter-spacing: -4px; color: blue; line-height: 100%;}
 
+.images .image { position: relative; }
+.images .image .overlay { position:absolute; top:0; left: 0; width: 100%; height:100%; background: rgba( 0,0,0,0.2); }
+.images .image .overlay .inner { position:absolute; top:50%; left: 50%; transform: translate(-50%,-50%); width: 100%; max-width: 920px; background: rgba(0,0,0,0.8); text-align: center; padding: 30px 40px; border-radius: 10px; }
+.images .image .overlay .inner h4 { color: blue; padding: 0; font-size: 90%;}
+.images .image .overlay .inner h2 { color: white; font-size: 300%; line-height: 110%; font-weight: 700; }
+.images .image .overlay .inner p { color: white; padding: 0; }
+
 .buttonnavigation { position: fixed; bottom: 60px; left: 50%; transform: translateX(-50%); padding: 20px; box-sizing: border-box; background: #ffffff; width: 45%; min-width: 715px; transition: all .2s ease-in-out; border-radius: 10px; box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; }
 .buttonnavigation .buttons { width: 100%; text-align: center; display: flex; flex-direction: row;  justify-content: center; }
 .buttonnavigation .buttons .button { box-sizing: border-box; padding: 20px 30px; display: inline-block; background: #f2f2f2; margin: 0 10px; cursor: pointer; border-radius: 10px; transition: all .2s ease-in-out; flex: 1; position: relative; }
@@ -35,6 +42,8 @@ div:after {clear: both; content: ""; display: block; height: 0; visibility: hidd
 .buttonnavigation.smaller .buttons .button { padding: 10px 20px; margin: 0 5px }
 .buttonnavigation.smaller .buttons .button p { font-size: 100%; }
 .buttonnavigation.smaller .buttons .button p.hovertext { font-size: 50%; top: -30px; padding: 4px 10px; }
+
+
 
 @media screen and (max-width: 1024px){
 	
