@@ -1,80 +1,33 @@
 $(document).ready(function(){
 
-  const $slider = $(".pages");
-    $slider.on('init', () => {
-        mouseWheel($slider)
-    })
-    .slick({
-        dots: true,
-        vertical: true,
-        infinite: false,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        arrows: false,
-        speed: 1000,
-        autoplay: false,
-        verticalSwiping: false,
+    $(function() {
+        //caches a jQuery object containing the header element
+        var header = $(".buttonnavigation");
+        $(window).scroll(function() {
+            var scroll = $(window).scrollTop();
 
+            if (scroll >= 500) {
+                header.addClass("smaller");
+            } else {
+                header.removeClass("smaller");
+            }
+        });
     });
 
-    $('a[data-slide]').click(function(e) {
-       // e.preventDefault();
-       var slideno = $(this).data('slide');
-       $('.pages').slick('slickGoTo', slideno - 1);
+    $( '.allclickable' ).click( function() {
+        var clickLinkClass = $( this ).find( 'a.clicklink' );
+
+        if( clickLinkClass.length ) {
+
+          if( clickLinkClass.attr( 'target' ) == '_blank' ) {
+            var link = clickLinkClass.attr( 'href' );
+            window.open( link, '_blank');
+          }
+          else {
+            window.location = clickLinkClass.attr( 'href' );
+          }
+        }
+        return false;
     });
-
-    $(".box-container .box ").click(function(){
-        $('.box-container .box').not(this).removeClass('selected');
-        $(this).toggleClass('selected');
-
-       if ( $('.box.previewlegacy').hasClass("selected") ) {
-            $( ".description.previewlegacy" ).show();
-            $( ".description.mirror" ).hide();
-            $( ".description.boozer" ).hide();
-            $( ".description.badminton" ).hide();
-       }
-        if ( $('.box.mirror').hasClass("selected") ) {
-            $( ".description.mirror" ).show();
-            $( ".description.boozer" ).hide();
-            $( ".description.badminton" ).hide();
-            $( ".description.previewlegacy" ).hide();
-
-       }
-       if ( $('.box.boozer').hasClass("selected") ) {
-            $( ".description.boozer" ).show();
-            $( ".description.mirror" ).hide();
-            $( ".description.badminton" ).hide();
-            $( ".description.previewlegacy" ).hide();
-
-       }
-       if ( $('.box.badminton').hasClass("selected") ) {
-            $( ".description.badminton" ).show();
-            $( ".description.mirror" ).hide();
-            $( ".description.boozer" ).hide();
-            $( ".description.previewlegacy" ).hide();
-
-       }
-    });
-
-    $('.work .right .description').matchHeight({ byRow: false });
 
 });
-
-
-
-
-function mouseWheel($slider) {
-    $(window).on('wheel', { $slider: $slider }, mouseWheelHandler)
-}
-    
-function mouseWheelHandler(event) {
-    // event.preventDefault()
-    const $slider = event.data.$slider
-    const delta = event.originalEvent.deltaY
-    if(delta > 0) {
-        $slider.slick('slickPrev')
-    }
-    else {
-        $slider.slick('slickNext')
-    }
-}
