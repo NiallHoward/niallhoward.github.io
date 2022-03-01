@@ -12,18 +12,27 @@ img { display: block; margin: 0; outline: none; padding: 0; max-width: 100%; wid
 div:after {clear: both; content: ""; display: block; height: 0; visibility: hidden; }
 .clear {clear: both;}
 
+/*bluegrey -  #6C91C2*/
+/*purple - #777DA7*/
+/*orange - #DD6031*/
+/*darkgrey - #333333*/
+/*lightgrey - #f2f2f2*/
+/*white - #ffffff*/
+
+
 .content-wrap { padding: 0 100px; position: relative; }
 .content-wrap .content { padding: 100px 0; position: relative; }
 .content-wrap .content .left { position: absolute; top: 50%; transform: translateY(-50%); left: 0; }
 .content-wrap .content .right { float: right; width: 45%; }
 .content-wrap .content h4 { font-size: 200%; padding: 0; }
-.content-wrap .content h1 { font-size: 550%; letter-spacing: -4px; color: blue; line-height: 100%;}
+.content-wrap .content h1 { font-size: 550%; letter-spacing: -4px; color: #6C91C2; line-height: 100%;}
 
 .images .image { position: relative; }
 .images .image .overlay { position:absolute; top:0; left: 0; width: 100%; height:100%; background: rgba( 0,0,0,0.2); }
-.images .image .overlay .inner { position:absolute; top:50%; left: 50%; transform: translate(-50%,-50%); width: 100%; max-width: 920px; background: rgba(0,0,0,0.8); text-align: center; padding: 30px 40px; border-radius: 10px; }
-.images .image .overlay .inner h4 { color: blue; padding: 0; font-size: 90%;}
-.images .image .overlay .inner h2 { color: white; font-size: 300%; line-height: 110%; font-weight: 700; }
+.images .image .overlay .inner { position:absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); width: 100%; max-width: 920px; background: rgba(0,0,0,0.8); text-align: center; padding: 30px 40px; border-radius: 10px; cursor: pointer; }
+.images .image .overlay .inner h4 { color: #6C91C2; padding: 0; font-size: 90%;}
+.images .image .overlay .inner h2 { color: white; font-size: 350%; line-height: 110%; font-weight: 700; }
+.images .image .overlay .inner h2 a { color: white; text-decoration: none; }
 .images .image .overlay .inner p { color: white; padding: 0; }
 
 .buttonnavigation { position: fixed; bottom: 60px; left: 50%; transform: translateX(-50%); padding: 20px; box-sizing: border-box; background: #ffffff; width: 45%; min-width: 715px; transition: all .2s ease-in-out; border-radius: 10px; box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; }
