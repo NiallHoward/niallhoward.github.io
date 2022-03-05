@@ -19,7 +19,6 @@ div:after {clear: both; content: ""; display: block; height: 0; visibility: hidd
 /*lightgrey - #f2f2f2*/
 /*white - #ffffff*/
 
-
 .content-wrap { padding: 0 100px; position: relative; }
 .content-wrap .content { padding: 100px 0; position: relative; }
 .content-wrap .content .left { position: absolute; top: 50%; transform: translateY(-50%); left: 0; }
@@ -39,7 +38,7 @@ div:after {clear: both; content: ""; display: block; height: 0; visibility: hidd
 .buttonnavigation .buttons { width: 100%; text-align: center; display: flex; flex-direction: row;  justify-content: center; }
 .buttonnavigation .buttons .button { box-sizing: border-box; padding: 20px 30px; display: inline-block; background: #f2f2f2; margin: 0 10px; cursor: pointer; border-radius: 10px; transition: all .2s ease-in-out; flex: 1; position: relative; }
 .buttonnavigation .buttons .button p { padding: 0; font-size: 200%; transition: all .5s ease-in-out; }
-.buttonnavigation .buttons .button p.hovertext { font-size: 70%; position: absolute; top: -40px; left: 50%; transform: translateX(-50%)!important; padding: 8px 16px; box-sizing: border-box; background: #858585; color: #ffffff; border-radius: 10px; opacity: 0; transition: all .6s ease-in-out;  }
+.buttonnavigation .buttons .button p.hovertext { font-size: 60%; position: absolute; top: -40px; left: 50%; transform: translateX(-50%)!important; width: 85%; padding: 8px 10px; box-sizing: border-box; background: #858585; color: #ffffff; border-radius: 10px; opacity: 0; transition: all .6s ease-in-out;  }
 .buttonnavigation .buttons .button p a { color: #858585; }
 
 .buttonnavigation .buttons .button:hover { flex-grow: 4; background: #858585; box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; }
