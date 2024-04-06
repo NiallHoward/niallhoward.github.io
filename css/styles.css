@@ -42,7 +42,7 @@ img { display: block; margin: 0; outline: none; padding: 0; max-width: 100%; wid
 	from {
 	  transform: scale(1);
 	  opacity: 0;
-	  filter: blur(3px);
+	  filter: blur(8px);
 	  
 	}
   
