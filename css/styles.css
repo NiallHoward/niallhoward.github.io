@@ -20,7 +20,7 @@ img { display: block; margin: 0; outline: none; padding: 0; max-width: 100%; wid
 .content-wrap { padding: 0 100px; position: relative; overflow: hidden; background: #ffffff; }
 .hovereffect { position: absolute; top: 0; left: 0; width: 100%; height: 100%; overflow: hidden; }
 
-.content-wrap .content { padding: 120px 0 220px 0; position: relative; display: flex; justify-content: space-between; align-items: center; gap: 6s0px; }
+.content-wrap .content { padding: 120px 0 220px 0; position: relative; display: flex; justify-content: space-between; align-items: center; gap: 60px; }
 .content-wrap .content .left { width: 55%; }
 .content-wrap .content .right { width: 45%; }
 .content-wrap .content h4 { font-size: 200%; padding: 0; color: #333333; }
@@ -36,12 +36,7 @@ img { display: block; margin: 0; outline: none; padding: 0; max-width: 100%; wid
 .images .image .overlay .inner p { color: white; padding: 0; }
 .images .image.inview .overlay .inner { padding: 30px 40px; }
 
-.image .overlay .inner {
-animation-timeline: view(block 50% 10%);
-animation-name: grow;
-animation-fill-mode: both;
-animation-duration: 1ms; /* Firefox requires this to apply the animation */
-animation-timing-function: linear;}
+.image .overlay .inner { animation-timeline: view(block 50% 10%); animation-name: grow; animation-fill-mode: both; animation-duration: 1ms; /* Firefox requires this to apply the animation */ animation-timing-function: linear;}
 
 @keyframes grow {
 	from {
@@ -92,5 +87,29 @@ animation-timing-function: linear;}
 	.buttonnavigation .buttons .button p.hovertext { display: none; }
 
 	.buttonnavigation.smaller .buttons .button p.hovertext, .buttonnavigation.smaller .buttons .button p.hovertext { font-size: 50%; top: -18px; padding: 4px 10px; }
+
+}
+
+@media screen and (max-width: 850px){
+
+	.content-wrap { padding: 0 20px;}
+
+}
+
+@media screen and (max-width: 700px){
+
+	.content-wrap .content { flex-direction: column; gap: 0; padding: 80px 0; }
+	.images .image .overlay .inner { width: 60%; }
+	.images .image .overlay .inner h2 { font-size: 200%; }
+
+}
+
+@media screen and (max-width: 550px){
+
+	.content-wrap .content { padding: 40px 0; }
+	.content-wrap .content .left h1 { font-size: 300%; letter-spacing: -2px; }
+
+	.images .image .overlay .inner { padding: 20px;}
+	.images .image .overlay .inner p { font-size: 90%; }
 
 }
